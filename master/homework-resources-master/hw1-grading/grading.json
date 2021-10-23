@@ -1,0 +1,554 @@
+{
+  "title": "Homework 1",
+  "short": "hw1",
+  "problems": {
+    "rational": {
+      "title": "Rational Numbers",
+      "directory": "rational",
+      "percentage": 0.3,
+      "tasks": {
+        "check_rational_source": {
+          "name": "check_rational_source",
+          "description": "Check if the header and implementation are present.",
+          "stage": "setup",
+          "kind": "check",
+          "dependencies": [],
+          "details": {
+            "sanity": true
+          }
+        },
+        "build_rational_harness": {
+          "name": "build_rational_harness",
+          "description": "Build with harness.",
+          "stage": "setup",
+          "kind": "build",
+          "dependencies": [
+            "check_rational_source"
+          ],
+          "details": {
+            "sanity": true
+          }
+        },
+        "test_constructor_default": {
+          "name": "test_constructor_default",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_constructor_basic": {
+          "name": "test_constructor_basic",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_constructor_iostream": {
+          "name": "test_constructor_iostream",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1.5
+          }
+        },
+        "test_addition_rational": {
+          "name": "test_addition_rational",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_addition_integral": {
+          "name": "test_addition_integral",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_multiplication_rational": {
+          "name": "test_multiplication_rational",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_multiplication_integral": {
+          "name": "test_multiplication_integral",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_exponent_positive": {
+          "name": "test_exponent_positive",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_exponent_zero": {
+          "name": "test_exponent_zero",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_exponent_negative": {
+          "name": "test_exponent_negative",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_equality": {
+          "name": "test_equality",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_inequality": {
+          "name": "test_inequality",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_less": {
+          "name": "test_less",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_assignment_addition_rational": {
+          "name": "test_assignment_addition_rational",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_assignment_addition_integral": {
+          "name": "test_assignment_addition_integral",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_assignment_multiplication_rational": {
+          "name": "test_assignment_multiplication_rational",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_assignment_multiplication_integral": {
+          "name": "test_assignment_multiplication_integral",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_normalized_zero": {
+          "name": "test_normalized_zero",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_addition_with_reduction": {
+          "name": "test_addition_with_reduction",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_multiplication_with_reduction": {
+          "name": "test_multiplication_with_reduction",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_assignment_addition_with_reduction": {
+          "name": "test_assignment_addition_with_reduction",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_assignment_multiplication_with_reduction": {
+          "name": "test_assignment_multiplication_with_reduction",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 0.5
+          }
+        },
+        "test_assignment_addition_same": {
+          "name": "test_assignment_addition_same",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "test_constructor_zero": {
+          "name": "test_constructor_zero",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "weight": 1
+          }
+        },
+        "cleanup_rational": {
+          "name": "cleanup_rational",
+          "description": "Remove binary.",
+          "stage": "teardown",
+          "kind": "cleanup",
+          "dependencies": [
+            "build_rational_harness"
+          ],
+          "details": {
+            "sanity": true
+          }
+        }
+      }
+    },
+    "reversi": {
+      "title": "Reversi Game",
+      "directory": "reversi",
+      "percentage": 0.4,
+      "tasks": {
+        "check_reversi_source": {
+          "name": "check_reversi_source",
+          "description": null,
+          "stage": "setup",
+          "kind": "check",
+          "dependencies": [],
+          "details": {
+            "sanity": true
+          }
+        },
+        "build_reversi_harness": {
+          "name": "build_reversi_harness",
+          "description": null,
+          "stage": "setup",
+          "kind": "build",
+          "dependencies": [
+            "check_reversi_source"
+          ],
+          "details": {
+            "sanity": true
+          }
+        },
+        "build_reversi_game": {
+          "name": "build_reversi_game",
+          "description": "Build the actual reversi game.",
+          "stage": "setup",
+          "kind": "build",
+          "dependencies": [],
+          "details": {
+            "sanity": true
+          }
+        },
+        "test_square_assignment": {
+          "name": "test_square_assignment",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_square_equal": {
+          "name": "test_square_equal",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_square_unequal": {
+          "name": "test_square_unequal",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_square_output": {
+          "name": "test_square_output",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_board_copy": {
+          "name": "test_board_copy",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_board_output": {
+          "name": "test_board_output",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {}
+        },
+        "test_game_quit": {
+          "name": "test_game_quit",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_single_capture": {
+          "name": "test_game_single_capture",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_play_1": {
+          "name": "test_game_play_1",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_play_2": {
+          "name": "test_game_play_2",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_play_3": {
+          "name": "test_game_play_3",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_play_4": {
+          "name": "test_game_play_4",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_undo": {
+          "name": "test_game_undo",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_game_undo_empty": {
+          "name": "test_game_undo_empty",
+          "description": null,
+          "stage": "test",
+          "kind": "correctness",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "test_memory_game_single_capture": {
+          "name": "test_memory_game_single_capture",
+          "description": null,
+          "stage": "test",
+          "kind": "memory",
+          "dependencies": [
+            "build_reversi_game"
+          ],
+          "details": {
+            "weight": 2
+          }
+        },
+        "cleanup_reversi_harness": {
+          "name": "cleanup_reversi_harness",
+          "description": null,
+          "stage": "teardown",
+          "kind": "cleanup",
+          "dependencies": [
+            "build_reversi_harness"
+          ],
+          "details": {
+            "sanity": true
+          }
+        }
+      }
+    }
+  }
+}

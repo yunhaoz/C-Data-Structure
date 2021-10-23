@@ -1,0 +1,5 @@
+.idea
+cmake-build-debug
+grocery-tests
+gricery-grading
+bin/

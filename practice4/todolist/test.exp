@@ -1,0 +1,15 @@
+numDays = 5
+numPriority = 0
+numDays = 60
+numDays = 4
+numPriority = 4
+Items on day 6
+6a 6b 6c 6d 
+Priority items 
+6c 2a 14a 14a 
+Priority items 
+6c 14a 14a 
+Priority items 
+6c 14a 
+Priority items 
+14a 
